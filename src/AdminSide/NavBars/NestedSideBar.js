@@ -70,7 +70,7 @@ export default function NestedSideBar() {
 
                     <List component="div" disablePadding >
 
-                    <Link   to='/display' >
+                    <Link   to='/displayStudents' >
                             <span className="displayStudentRecords">
                                     <ListItemButton sx={{ pl: 4 }}>
                                         <ListItemIcon>
@@ -80,6 +80,8 @@ export default function NestedSideBar() {
                             </ListItemButton>
                             </span>        
                     </Link>
+
+                   
 
 
 
@@ -164,7 +166,7 @@ export default function NestedSideBar() {
                     <List component="div" disablePadding>
 
 
-                    <Link   to='/display' >
+                    <Link   to='/displayTeachers' >
                             <span className="displayTeacherRecords">
                                     <ListItemButton sx={{ pl: 4 }}>
                                         <ListItemIcon>

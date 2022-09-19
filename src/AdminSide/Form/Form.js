@@ -3,6 +3,8 @@ import "./Form.css";
 import { TextField } from "@mui/material";
 import Button from "@mui/material/Button";
 import axios from "axios";
+import TopNavBar from '../NavBars/TopNavBar'
+import NestedSideBar from '../NavBars/NestedSideBar'
 
 // import * as React from 'react';
 
@@ -10,7 +12,7 @@ import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
 
 function Form(props) {
-  function fun() {}
+  function fun() { }
 
   const [roll_no, setRollno] = useState("");
   //   const [id,setId] = useState();
@@ -38,18 +40,13 @@ function Form(props) {
       contact,
     };
     const standard = {
-        standard_id
+      standard_id
     }
-    // console.log(user)
-    // console.log(rollno)
-    // console.log(classid)
 
-    const student = { user, roll_no, standard};
+
+    const student = { user, roll_no, standard };
     console.log(student);
 
-    // axios.post("http://localhost:8080/admin/addstudent",{
-    //         student
-    //       }).then(res=>console.log("DATA COLLECTED",res))
 
     fetch("http://localhost:8080/admin/addstudent", {
       method: "POST",
@@ -63,12 +60,143 @@ function Form(props) {
   };
 
   return (
-    <div>
-      <h1 className="heading"> {props.name}</h1>
+    <div className='MainContainerAdminHomePage'>
+      <div className="topBar" >
+        <TopNavBar />
 
+      </div>
+
+
+      <div className="sideBar" >
+        <NestedSideBar />
+      </div>
+
+
+      {/* className="materialForm" */}
       <div className="Form">
-        <form className="materialForm">
-          <TextField
+        <h1 className="heading"> {props.name}</h1>
+        <form className="materialForm" >
+          <div className="row">
+            <div className="col-25">
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Fisrt Name *"
+                required
+                value={first_name}
+                onChange={(e) => setFirstName(e.target.value)}
+                 />
+            </div>
+            <div className="col-25">
+              <input
+                type="text"
+                id="lname"
+                name="lastname"
+                required
+                placeholder="Lastname *"
+                value={last_name}
+                onChange={(e) => setLastName(e.target.value)}
+                />
+            </div>
+            <div className="col-25">
+              <input
+                type="text"
+                id="rollno"
+                label={props.firstField}
+                name="rollno"
+                placeholder="Roll Number *"
+                required
+                value={roll_no}
+                onChange={(e) => setRollno(e.target.value)}
+                />
+            </div>
+            <div className="col-25">
+              <input
+                type="text"
+                id="standardid"
+                name="standardid"
+                placeholder="Standard Id *"
+                required
+                label={props.id}
+                value={standard_id}
+                onChange={(e) => setClassId(e.target.value)}
+                />
+            </div>
+            <div className="col-25">
+              <input
+                type="number"
+                id="contact"
+                name="contact"
+                placeholder="Contact *"
+                required
+                label="Number"
+                defaultValue={+91}
+                value={contact}
+                onChange={(e) => setContact(e.target.value)}
+                 />
+            </div>
+            <div className="col-25">
+              <input
+                type="text"
+                id="dob"
+                name="dob"
+                placeholder="Date Of Birth *"
+                required
+                value={dob}
+                onChange={(e) => setDOB(e.target.value)}
+                 />
+            </div>
+            <div className="col-25">
+              <input
+                type="text"
+                id="gender"
+                name="gender"
+                placeholder="Gender *"
+                required
+                value={gender}
+                onChange={(e) => setGender(e.target.value)}
+                 />
+            </div>
+            
+            <div className="col-25">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email *"
+                required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+               />
+            </div>
+            <div className="col-25">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="User Name *"
+                required
+                value={username}
+                onChange={(e) => setUserName(e.target.value)}
+                />
+            </div>
+            <div className="col-25">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password *"
+                required
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                />
+            </div>
+
+
+
+          </div>
+          {/* <TextField
             id="outlined-basic"
             label={props.firstField}
             variant="outlined"
@@ -173,7 +301,7 @@ function Form(props) {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <br />
+          <br /> */}
 
           <br />
           {/* onClick={(e)=>setId(e.target.value)} */}
