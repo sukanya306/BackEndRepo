@@ -1,0 +1,64 @@
+.body
+{
+    background-image: linear-gradient(to bottom right, #d89aaa,#5079af,#c1b4e3);
+    height: 50rem;
+}
+.header
+{
+    background-color: rgb(69, 69, 145);
+    height: 50px;
+    
+    
+}
+.form
+{
+    position:inherit;
+    /* top:100px; */
+    width: 500px;
+    height: 400px;
+    float: left;
+    justify-content: space-between;
+    
+    
+    border: 2px black;
+    /* text-align: center; */
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 140px;
+    padding-left: 50px;
+    font-size: 24px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image:linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
+    backdrop-filter: "blur(10px)"; 
+    box-shadow: 10px 10px 10px rgba(30,30,30,0.5);
+    border-radius: 10px;
+    
+    
+    
+}
+.formgroup
+{
+    font-size: 20px;
+
+}
+.image
+{
+    /* float: right;  */
+    margin-right: 100px;  
+    margin-top: 120px;
+   
+}
+.dropdown
+{
+    position: relative;
+    display: inline-block;
+    
+}
+.dropdowncontent
+{
+    color: rgb(29, 29, 28);
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 35px;
+}

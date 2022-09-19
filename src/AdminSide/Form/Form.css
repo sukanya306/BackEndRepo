@@ -1,0 +1,62 @@
+
+.body{
+  margin: 0%;
+}
+
+.heading{
+  text-align: center;
+}
+
+.SidebarList{
+  background-color: #DFDFDF;
+  padding: 0%;
+  height: 100%;
+
+}
+
+.SidebarList.row{
+  height: 100%;
+  background-color: aqua;
+  border: 10%;
+}
+
+
+
+.Sidebar{
+  color: black;
+    height: 150vh;
+    width: 200px;
+    background-color: #DFDFDF;
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+
+.Form{
+
+    background: rgb(255, 255, 255);
+    display:flex;
+    flex-direction: column;
+      float: right;
+      margin-left: 50px;
+      padding-right: 300px;
+  }
+
+.MainContainer{
+  display: flex;
+  margin-top: 40px;
+
+}
+
+.materialForm{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 350px;
+
+}
+
+.submitButton{
+  background-color: rgb(4, 255, 4);
+}

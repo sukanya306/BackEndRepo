@@ -1,0 +1,22 @@
+.card-body
+{
+    width: 450px;
+    margin-left: 60px;
+    margin-top: 50px ;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+    border-radius: 5px;
+}
+.card-title
+{
+    font-weight: bold;
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.card-btn
+{
+    background-color: rgb(196, 99, 21);
+    font-weight: bold;
+}
